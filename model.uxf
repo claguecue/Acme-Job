@@ -296,4 +296,23 @@ m2=*
 has v</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>714</x>
+      <y>427</y>
+      <w>266</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Acme-Request
+--
++title: String{NotBlank}
++creationMoment: Date{Temporal(TIMESTAMP),Past}
++deadline: Date{Temporal(TIMESTAMP)}
++text: String{NotBlank}
++reward: Money{NotNull}
++ticker: String{Pattern(R[A-Z]{4}-[0-9]{4})}</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
