@@ -16,5 +16,92 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<import resource="conversion-service.xml" />
+	
+		
+	<!-- Challenge -->
+
+	<bean class="acme.entities.challenges.Challenge" id="challenge1">
+		<property value="Engineers Wanted!" name="title"/>
+		<property value="2020/01/05 11:00" name="deadline"/>
+		<property value="MASA needs new engineers. Apply here" name="description"/>
+		<property value="Resolve gold challenge" name="goldGoal"/>
+		<property name="goldReward">
+			<bean class="acme.framework.datatypes.Money">
+				<property value="400" name="amount"/>
+				<property value="€" name="currency"/>
+			</bean>
+		</property>
+		<property value="Resolve silver challenge" name="silverGoal"/>
+		<property name="silverReward">
+			<bean class="acme.framework.datatypes.Money">
+				<property value="300" name="amount"/>
+				<property value="€" name="currency"/>
+			</bean>
+		</property>
+		<property value="Resolve bronze challenge" name="bronzeGoal"/>
+		<property name="bronzeReward">
+			<bean class="acme.framework.datatypes.Money">
+				<property value="200" name="amount"/>
+				<property value="€" name="currency"/>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean class="acme.entities.challenges.Challenge" id="challenge2">
+		<property value="Maths Wanted!" name="title"/>
+		<property value="2020/02/05 11:25" name="deadline"/>
+		<property value="MASA needs new maths. Apply here" name="description"/>
+		<property value="Resolve gold math problem" name="goldGoal"/>
+		<property name="goldReward">
+			<bean class="acme.framework.datatypes.Money">
+				<property value="600" name="amount"/>
+				<property value="€" name="currency"/>
+			</bean>
+		</property>
+		<property value="Resolve silver math problem" name="silverGoal"/>
+		<property name="silverReward">
+			<bean class="acme.framework.datatypes.Money">
+				<property value="500" name="amount"/>
+				<property value="€" name="currency"/>
+			</bean>
+		</property>
+		<property value="Resolve bronze math problem" name="bronzeGoal"/>
+		<property name="bronzeReward">
+			<bean class="acme.framework.datatypes.Money">
+				<property value="300" name="amount"/>
+				<property value="€" name="currency"/>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean class="acme.entities.challenges.Challenge" id="challenge3">
+		<property value="Developers Wanted!" name="title"/>
+		<property value="2020/04/03 12:00" name="deadline"/>
+		<property value="MASA needs new developers. Apply here" name="description"/>
+		<property value="Create an app" name="goldGoal"/>
+		<property name="goldReward">
+			<bean class="acme.framework.datatypes.Money">
+				<property value="6000" name="amount"/>
+				<property value="€" name="currency"/>
+			</bean>
+		</property>
+		<property value="Create an api" name="silverGoal"/>
+		<property name="silverReward">
+			<bean class="acme.framework.datatypes.Money">
+				<property value="3500" name="amount"/>
+				<property value="€" name="currency"/>
+			</bean>
+		</property>
+		<property value="Create a web" name="bronzeGoal"/>
+		<property name="bronzeReward">
+			<bean class="acme.framework.datatypes.Money">
+				<property value="1500" name="amount"/>
+				<property value="€" name="currency"/>
+			</bean>
+		</property>
+	</bean>
+	
+	
+	
 
 </beans>
