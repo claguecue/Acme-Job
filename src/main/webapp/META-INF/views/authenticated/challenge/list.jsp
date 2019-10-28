@@ -18,14 +18,14 @@
 
 <acme:list>
 	<acme:list-column code="authenticated.challenge.list.label.title" path="title" width="15%"/>
-	<acme:list-column code="authenticated.challenge.list.label.deadline" path="deadline" width="10%"/>
+	<acme:list-column code="authenticated.challenge.list.label.deadline" path="deadline" width="5%"/>
 	<acme:list-column code="authenticated.challenge.list.label.description" path="description" width="15%"/>
 	<acme:list-column code="authenticated.challenge.list.label.goldGoal" path="goldGoal" width="10%"/>
-	<acme:list-column code="authenticated.challenge.list.label.goldReward" path="goldReward" width="10%"/>
+	<acme:list-column code="authenticated.challenge.list.label.goldReward" path="goldReward" width="5%"/>
 	<acme:list-column code="authenticated.challenge.list.label.silverGoal" path="silverGoal" width="10%"/>
-	<acme:list-column code="authenticated.challenge.list.label.silverReward" path="silverReward" width="10%"/>
+	<acme:list-column code="authenticated.challenge.list.label.silverReward" path="silverReward" width="5%"/>
 	<acme:list-column code="authenticated.challenge.list.label.bronzeGoal" path="bronzeGoal" width="10%"/>
-	<acme:list-column code="authenticated.challenge.list.label.bronzeReward" path="bronzeReward" width="10%"/>
+	<acme:list-column code="authenticated.challenge.list.label.bronzeReward" path="bronzeReward" width="5%"/>
 </acme:list>
 
 
