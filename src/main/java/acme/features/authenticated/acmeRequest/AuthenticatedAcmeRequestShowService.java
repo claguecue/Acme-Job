@@ -1,7 +1,7 @@
 /*
- * AdministratorUserAccountShowService.java
+ * AuthenticatedAcmeRequestShowService.java
  *
- * Copyright (c) 2019 Rafael Corchuelo.
+ * Copyright (c) 2019 Aureliano Piqueras, based on Rafael Corchuelo's DP Starter project.
  *
  * In keeping with the traditional purpose of furthering education and research, it is
  * the policy of the copyright owner to permit non-commercial use and redistribution of
@@ -9,14 +9,6 @@
  * purposes. The copyright owner does not offer any warranties or representations, nor do
  * they accept any liabilities with respect to them.
  */
-
-//
-// +title: String{NotBlank}
-// +creationMoment: Date{Temporal(TIMESTAMP),Past}
-// +deadline: Date{Temporal(TIMESTAMP)}
-// +text: String{NotBlank}
-// +reward: Money{NotNull}
-// +ticker: String{Pattern(R[A-Z]{4}-[0-9]{4})}
 
 package acme.features.authenticated.acmeRequest;
 

@@ -2,7 +2,7 @@
 <%--
 - list.jsp
 -
-- Copyright (c) 2019 Rafael Corchuelo.
+- Copyright (c) 2019 Aureliano Piqueras, based on Rafael Corchuelo's DP Starter project.
 -
 - In keeping with the traditional purpose of furthering education and research, it is
 - the policy of the copyright owner to permit non-commercial use and redistribution of

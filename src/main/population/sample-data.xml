@@ -17,6 +17,9 @@
 
 	<import resource="conversion-service.xml" />
 
+
+<!-- AcmeRequest -->
+
 	<bean class="acme.entities.acmeRequests.AcmeRequest" id="request1">
 		<property value="RABCD-1234" name="ticker"/>
 		<property value="2018/01/05 11:00" name="creationMoment"/>
@@ -59,4 +62,7 @@
 			</bean>
 		</property>
 	</bean>
+	
+	
+	
 </beans>
