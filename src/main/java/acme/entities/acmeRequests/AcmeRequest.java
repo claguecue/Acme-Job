@@ -14,6 +14,7 @@ package acme.entities.acmeRequests;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -54,6 +55,7 @@ public class AcmeRequest extends DomainEntity {
 	@NotNull
 	private Money				reward;
 
+	@Column(unique = true)
 	@Pattern(regexp = "R[A-Z]{4}-[0-9]{4}")
 	private String				ticker;
 

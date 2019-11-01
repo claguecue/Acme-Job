@@ -8,7 +8,7 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.acme-request.form.label.ticker = Ticker: 
+authenticated.acme-request.form.label.ticker = Identificador: 
 authenticated.acme-request.form.label.creationMoment = Momento de creación: 
 authenticated.acme-request.form.label.title = Titulo:
 authenticated.acme-request.form.label.deadline = Fecha límite:
@@ -17,7 +17,7 @@ authenticated.acme-request.form.label.reward = Gratificación:
 
 authenticated.acme-request.form.button.return = Volver
 
-authenticated.acme-request.list.label.ticker = Ticker
+authenticated.acme-request.list.label.ticker = Identificador
 authenticated.acme-request.list.label.creationMoment = Momento de creación
 authenticated.acme-request.list.label.title = Titulo
 authenticated.acme-request.list.label.deadline = Fecha límite

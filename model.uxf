@@ -299,8 +299,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>714</x>
-      <y>427</y>
+      <x>336</x>
+      <y>392</y>
       <w>266</w>
       <h>105</h>
     </coordinates>
@@ -312,7 +312,7 @@ Acme-Request
 +deadline: Date{Temporal(TIMESTAMP)}
 +text: String{NotBlank}
 +reward: Money{NotNull}
-+ticker: String{Pattern(R[A-Z]{4}-[0-9]{4})}</panel_attributes>
++ticker: String{Unique,Pattern(R[A-Z]{4}-[0-9]{4})}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
