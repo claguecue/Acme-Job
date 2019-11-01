@@ -56,7 +56,7 @@ public class AcmeRequest extends DomainEntity {
 	private Money				reward;
 
 	@Column(unique = true)
-	@Pattern(regexp = "R[A-Z]{4}-[0-9]{4}")
+	@Pattern(regexp = "^R[A-Z]{4}-[0-9]{4}$")
 	private String				ticker;
 
 	// Derived attributes -----------------------------------------------------
