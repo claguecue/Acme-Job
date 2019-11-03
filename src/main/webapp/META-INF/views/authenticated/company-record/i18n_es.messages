@@ -18,5 +18,5 @@ authenticated.company-record.list.label.description = Descripción de actividade
 authenticated.company-record.list.label.website = Página Web:
 authenticated.company-record.list.label.phone = Teléfono:
 authenticated.company-record.list.label.email = Correo electrónico:
-# authenticated.company-record.list.label.isInc = Tipo:
+# authenticated.company-record.list.label.isInc = es incorporativo:
 authenticated.company-record.list.label.starNumber = Estrellas:
