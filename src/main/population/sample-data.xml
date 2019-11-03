@@ -16,5 +16,42 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<import resource="conversion-service.xml" />
+	
+	<bean id="offer01" class="acme.entities.offers.Offer">
+	<property name="title" value="Dev ops"/>
+	<property name="creationMoment" value="2002/06/06 00:10"/>
+	<property name="limitDate" value="2022/06/06 00:00"/>
+	<property name="descriptionText" value="New great job offer in IBM"/>
+	<property name="amount" value="30000.00 €"/>
+	<property name="ticker" value="OAAAA-99999"/>
+	</bean>
+	
+	<bean id="offer02" class="acme.entities.offers.Offer">
+	<property name="title" value="Software Tester"/>
+	<property name="creationMoment" value="2018/06/06 13:00"/>
+	<property name="limitDate" value="2028/06/07 15:00"/>
+	<property name="descriptionText" value="New great job offer in Microsoft"/>
+	<property name="amount" value="31000.00 €"/>
+	<property name="ticker" value="OAAAA-99990"/>
+	</bean>
+	
+	<bean id="offer03" class="acme.entities.offers.Offer">
+	<property name="title" value="Data analyst"/>
+	<property name="creationMoment" value="2018/06/06 00:03"/>
+	<property name="limitDate" value="2020/06/11 22:00"/>
+	<property name="descriptionText" value="Google need Data analysts"/>
+	<property name="amount" value="40000.00 €"/>
+	<property name="ticker" value="OAAAA-99998"/>
+	</bean>
+	
+	<bean id="offer04" class="acme.entities.offers.Offer">
+	<property name="title" value="UX designer"/>
+	<property name="creationMoment" value="2002/06/06 01:00"/>
+	<property name="limitDate" value="2021/06/08 10:00"/>
+	<property name="descriptionText" value="Hooli need you"/>
+	<property name="amount" value="50000.00 €"/>
+	<property name="ticker" value="OAAAA-00000"/>
+	</bean>
+	
 
 </beans>
