@@ -16,5 +16,36 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<import resource="conversion-service.xml" />
+	
+	<!-- Announcements -->
 
+	
+	<bean id="announcement01" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 01"/>
+		<property name="moment" value="2019/10/31 14:30"/>
+		<property name="moreInfo"><null/></property>
+		<property name="text" value="This is the first description"/>
+	</bean>
+	
+	<bean id="announcement02" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 02"/>
+		<property name="moment" value="2002/10/24 12:00"/>
+		<property name="moreInfo" value="https://github.com"/>
+		<property name="text" value="This is the second description"/>
+	</bean>
+	
+	<bean id="announcement03" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 03"/>
+		<property name="moment" value="2019/11/01 11:25"/>
+		<property name="moreInfo" value="https://example.com"/>
+		<property name="text" value="This is the third description"/>
+	</bean>
+	
+	<bean id="announcement04" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 04"/>
+		<property name="moment" value="2010/01/10 01:05"/>
+		<property name="moreInfo"><null/></property>
+		<property name="text" value="This is the fourth description"/>
+	</bean>
+	
 </beans>
