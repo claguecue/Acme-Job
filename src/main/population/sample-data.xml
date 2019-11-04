@@ -19,6 +19,7 @@
 	
 	<!-- Announcements -->
 
+
 	
 	<bean id="announcement01" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 01"/>
@@ -46,6 +47,51 @@
 		<property name="moment" value="2010/01/10 01:05"/>
 		<property name="moreInfo"><null/></property>
 		<property name="text" value="This is the fourth description"/>
+	</bean>
+
+<!-- AcmeRequest -->
+
+	<bean class="acme.entities.acmeRequests.AcmeRequest" id="request1">
+		<property value="RABCD-1234" name="ticker"/>
+		<property value="2018/01/05 11:00" name="creationMoment"/>
+		<property value="2020/01/05 11:00" name="deadline"/>
+		<property value="Engineers Wanted!" name="title"/>
+		<property value="MASA needs new engineers. Apply here" name="text"/>
+		<property name="reward">
+			<bean class="acme.framework.datatypes.Money">
+				<property value="10000" name="amount"/>
+				<property value="€" name="currency"/>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean class="acme.entities.acmeRequests.AcmeRequest" id="request2">
+		<property value="RABCD-1235" name="ticker"/>
+		<property value="2018/01/06 11:00" name="creationMoment"/>
+		<property value="2020/01/06 11:00" name="deadline"/>
+		<property value="Maths Wanted!" name="title"/>
+		<property value="MASA needs new maths. Apply here" name="text"/>
+		<property name="reward">
+			<bean class="acme.framework.datatypes.Money">
+				<property value="14000" name="amount"/>
+				<property value="€" name="currency"/>
+			</bean>
+		</property>
+	</bean>
+	
+		
+	<bean class="acme.entities.acmeRequests.AcmeRequest" id="request3">
+		<property value="RABCD-1236" name="ticker"/>
+		<property value="2018/03/06 11:00" name="creationMoment"/>
+		<property value="2020/03/06 11:00" name="deadline"/>
+		<property value="Developers Wanted!" name="title"/>
+		<property value="MASA needs new devs. Apply here" name="text"/>
+		<property name="reward">
+			<bean class="acme.framework.datatypes.Money">
+				<property value="18000" name="amount"/>
+				<property value="€" name="currency"/>
+			</bean>
+		</property>
 	</bean>
 	
 </beans>

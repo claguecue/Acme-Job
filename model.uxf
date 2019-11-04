@@ -299,6 +299,7 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
+
       <x>217</x>
       <y>357</y>
       <w>231</w>
@@ -310,6 +311,25 @@ has v</panel_attributes>
 + moment: Date{Temporal(TIMESTAMP), Past}
 + moreInfo:String{URL}
 + text: String{NotBlank}</panel_attributes>
+              
+              
+      <x>336</x>
+      <y>392</y>
+      <w>266</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Acme-Request
+--
++title: String{NotBlank}
++creationMoment: Date{Temporal(TIMESTAMP),Past}
++deadline: Date{Temporal(TIMESTAMP)}
++text: String{NotBlank}
++reward: Money{NotNull}
++ticker: String{Unique,Pattern(^R[A-Z]{4}-[0-9]{4}$)}</panel_attributes>
+
+ 
+
     <additional_attributes/>
   </element>
 </diagram>
