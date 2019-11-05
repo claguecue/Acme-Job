@@ -6,7 +6,6 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 
-import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -24,7 +23,8 @@ public class Investor extends DomainEntity {
 	@NotBlank
 	private String				sector;
 
-	private Money				investingStatement;
+	@NotBlank
+	private String				investingStatement;
 
 	@Min(value = 0)
 	@Max(value = 5)
