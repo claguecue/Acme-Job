@@ -300,6 +300,8 @@ has v</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
 
+      
+      
       <x>217</x>
       <y>357</y>
       <w>231</w>
@@ -310,9 +312,12 @@ has v</panel_attributes>
 + title: String{NotBlank}
 + moment: Date{Temporal(TIMESTAMP), Past}
 + moreInfo:String{URL}
-+ text: String{NotBlank}</panel_attributes>
++ text: String{NotBlank}
+    </panel_attributes>
               
-              
+            
+    
+    
       <x>336</x>
       <y>392</y>
       <w>266</w>
@@ -327,8 +332,10 @@ Acme-Request
 +text: String{NotBlank}
 +reward: Money{NotNull}
 +ticker: String{Unique,Pattern(^R[A-Z]{4}-[0-9]{4}$)}
+    </panel_attributes>      
   
-  
+      
+      
       <x>441</x>
       <y>455</y>
       <w>266</w>
@@ -343,8 +350,31 @@ Offer
 + amount: Money 
 + description: String {NotBlank}
 + ticker: Integer {Valid, NotBlank, Unique}
+    </panel_attributes>      
 
-</panel_attributes> 
+      
+      
+      <x>273</x>
+      <y>399</y>
+      <w>322</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+CompanyRecord
+--
+
++ name: String{NotBlank}
++ sector: String {NotBlank}
++ ceo: String {NotBlank}
++ description: String {NotBlank}
++ website: String {URL}{NotBlank} 
++ phone:String {Unique,Pattern \\+[1-9]{1,3}\\([0-9]{1,4}\\)[0-9]{6,10})}
++ email : String {EMAIL} {NotBlank}
++ isInc : Boolean {NotNull}
++ starNumber: Integer {NotNull}
+    </panel_attributes>  
+  
+  
 
     <additional_attributes/>
   </element>
