@@ -54,6 +54,19 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `offer` (
+       `id` integer not null,
+        `version` integer not null,
+        `amount_amount` double precision,
+        `amount_currency` varchar(255),
+        `creation_moment` datetime(6),
+        `description_text` varchar(255),
+        `limit_date` datetime(6),
+        `ticker` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `provider` (
        `id` integer not null,
         `version` integer not null,
@@ -80,6 +93,9 @@
     ) engine=InnoDB;
 
     insert into `hibernate_sequence` values ( 1 );
+
+    alter table `offer` 
+       add constraint UK_iex7e8fs0fh89yxpcnm1orjkm unique (`ticker`);
 
     alter table `company_record` 
        add constraint UK_ssc7d0vl7xqysfq2gp9hryv61 unique (`phone`);
