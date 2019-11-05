@@ -47,6 +47,7 @@ master.menu.administrator.announcement = Announcement List
 
 master.menu.authenticated = Authenticated
 master.menu.authenticated.announcement = Announcement List
+master.menu.authenticated.challenge.list = Challenges List
 
 # master.menu.authenticated ###################################################
 

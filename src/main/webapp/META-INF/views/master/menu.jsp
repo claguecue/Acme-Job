@@ -37,6 +37,7 @@
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+      <acme:menu-suboption code="master.menu.authenticated.challenge.list" action="/authenticated/challenge/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.company-record" action="/authenticated/company-record/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.announcement" action="/authenticated/announcement/list"/>
 		</acme:menu-option>

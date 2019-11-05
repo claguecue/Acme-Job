@@ -388,6 +388,27 @@ CompanyRecord
 + investingStatement: Money
 + starsNumber: Integer {Min:0, Max:5}
   </panel_attributes>
+
+
+  
+      <x>224</x>
+      <y>350</y>
+      <w>196</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Challenge
+--
++title: String{NotBlank}
++deadline: Date{Temporal(TIMESTAMP}
++description: String{NotBlank}
++bronzeGoal: String{NotBlank}
++bronzeReward: Money{NotNull}
++silverGoal: String{NotBlank}
++silverReward: Money{NotNull}
++goldGoal: String{NotBlank}
++goldReward: Money{NotNull}
+  </panel_attributes>
   
   
 
