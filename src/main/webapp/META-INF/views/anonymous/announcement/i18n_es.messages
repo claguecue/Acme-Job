@@ -8,13 +8,13 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+anonymous.announcement.list.label.title	= Título
+anonymous.announcement.list.label.moment = Momento
 
-authenticated.consumer.consumer.form.title.create = Hazte trabajador
-authenticated.consumer.consumer.form.title.update = Actualiza tus datos de trabajador
 
-authenticated.consumer.consumer.form.label.compañía = Compañía
-authenticated.consumer.consumer.form.label.sector = Sector
+anonymous.announcement.form.label.title	= Título
+anonymous.announcement.form.label.moment = Momento
+anonymous.announcement.form.label.moreInfo	= Información adicional
+anonymous.announcement.form.label.text	= Texto descriptivo
 
-authenticated.consumer.consumer.form.button.create = Registrar
-authenticated.consumer.consumer.form.button.update = Actualizar
-authenticated.consumer.consumer.form.button.return = Volver
+anonymous.announcement.form.button.return = Volver
