@@ -19,6 +19,9 @@
        drop 
        foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
 
+
+    drop table if exists `acme_request`;
+
     drop table if exists `administrator`;
 
     drop table if exists `announcement`;
@@ -40,6 +43,7 @@
     drop table if exists `provider`;
 
     drop table if exists `request1`;
+
 
     drop table if exists `user_account`;
 

@@ -1,4 +1,19 @@
 
+
+    create table `acme_request` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation_moment` datetime(6),
+        `deadline` datetime(6),
+        `reward_amount` double precision,
+        `reward_currency` varchar(255),
+        `text` varchar(255),
+        `ticker` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+
     create table `administrator` (
        `id` integer not null,
         `version` integer not null,
@@ -136,11 +151,15 @@
 
     insert into `hibernate_sequence` values ( 1 );
 
+    alter table `acme_request` 
+       add constraint UK_oycxhvu32i3mjhwooe9yvt62c unique (`ticker`);
+
     alter table `company_record` 
        add constraint UK_ssc7d0vl7xqysfq2gp9hryv61 unique (`phone`);
 
     alter table `offer` 
        add constraint UK_iex7e8fs0fh89yxpcnm1orjkm unique (`ticker`);
+
 
     alter table `request1` 
        add constraint UK_ga53mykoe385u51drfaw165o2 unique (`ticker`);
