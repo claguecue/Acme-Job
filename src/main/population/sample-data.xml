@@ -17,33 +17,108 @@
 
 	<import resource="conversion-service.xml" />
 	
+	<!-- Announcements -->
 	
-	<!-- CompanyRecords -->
+	<bean id="announcement01" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 01"/>
+		<property name="moment" value="2019/10/31 14:30"/>
+		<property name="moreInfo"><null/></property>
+		<property name="text" value="This is the first description"/>
+	</bean>
+	
+	<bean id="announcement02" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 02"/>
+		<property name="moment" value="2002/10/24 12:00"/>
+		<property name="moreInfo" value="https://github.com"/>
+		<property name="text" value="This is the second description"/>
+	</bean>
+	
+	<bean id="announcement03" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 03"/>
+		<property name="moment" value="2019/11/01 11:25"/>
+		<property name="moreInfo" value="https://example.com"/>
+		<property name="text" value="This is the third description"/>
+	</bean>
+	
+	<bean id="announcement04" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 04"/>
+		<property name="moment" value="2010/01/10 01:05"/>
+		<property name="moreInfo"><null/></property>
+		<property name="text" value="This is the fourth description"/>
+	</bean>
+
+<!-- AcmeRequest -->
+
+	<bean class="acme.entities.acmeRequests.AcmeRequest" id="request1">
+		<property value="RABCD-1234" name="ticker"/>
+		<property value="2018/01/05 11:00" name="creationMoment"/>
+		<property value="2020/01/05 11:00" name="deadline"/>
+		<property value="Engineers Wanted!" name="title"/>
+		<property value="MASA needs new engineers. Apply here" name="text"/>
+		<property name="reward">
+			<bean class="acme.framework.datatypes.Money">
+				<property value="10000" name="amount"/>
+				<property value="€" name="currency"/>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean class="acme.entities.acmeRequests.AcmeRequest" id="request2">
+		<property value="RABCD-1235" name="ticker"/>
+		<property value="2018/01/06 11:00" name="creationMoment"/>
+		<property value="2020/01/06 11:00" name="deadline"/>
+		<property value="Maths Wanted!" name="title"/>
+		<property value="MASA needs new maths. Apply here" name="text"/>
+		<property name="reward">
+			<bean class="acme.framework.datatypes.Money">
+				<property value="14000" name="amount"/>
+				<property value="€" name="currency"/>
+			</bean>
+		</property>
+	</bean>
+	
+		
+	<bean class="acme.entities.acmeRequests.AcmeRequest" id="request3">
+		<property value="RABCD-1236" name="ticker"/>
+		<property value="2018/03/06 11:00" name="creationMoment"/>
+		<property value="2020/03/06 11:00" name="deadline"/>
+		<property value="Developers Wanted!" name="title"/>
+		<property value="MASA needs new devs. Apply here" name="text"/>
+		<property name="reward">
+			<bean class="acme.framework.datatypes.Money">
+				<property value="18000" name="amount"/>
+				<property value="€" name="currency"/>
+			</bean>
+		</property>
+	</bean>
+  
+  
+  <!-- CompanyRecords -->
 	
 	<bean id= "record 1" class="acme.entities.companyRecords.CompanyRecord" >
-	 <property name="name" value=" Acme, INC"/>
-	 <property name="sector" value=" IT"/>
-	 <property name="ceo" value=" Manuel Morales Gil"/>
-	 <property name="description" value=" bussiness intelligence"/>
-	 <property name="website" value=" http://acme.es " />
-	 <property name="phone" value="+666(9999)55555555"/>
-	 <property name="email" value="acme@company.com"/>
-	 <property name="isInc" value="true"/> 
-	 <property name="starNumber" value="3"/>
+	  <property name="name" value=" Acme, INC"/>
+	  <property name="sector" value=" IT"/>
+	  <property name="ceo" value=" Manuel Morales Gil"/>
+	  <property name="description" value=" bussiness intelligence"/>
+	  <property name="website" value=" http://acme.es " />
+	  <property name="phone" value="+666(9999)55555555"/>
+	  <property name="email" value="acme@company.com"/>
+	  <property name="isInc" value="true"/> 
+	  <property name="starNumber" value="3"/>
 	   
-	  </bean>
+	 </bean>
 	  
-	  <bean id= "record 2" class="acme.entities.companyRecords.CompanyRecord" >
-	 <property name="name" value=" Companyus, LLC"/>
-	 <property name="sector" value=" IT "/>
-	 <property name="ceo" value=" Lizseth Esquen Saavedra "/>
-	 <property name="description" value=" ERP, CRM, Business Intelligence "/>
-	 <property name="website" value=" http://companyus.es " />
-	 <property name="phone" value="+456(1299)75585595"/>
-	 <property name="email" value="cus@empresa.com"/>
-	 <property name="isInc" value="false"/> 
-	 <property name="starNumber" value="5"/>
+	 <bean id= "record 2" class="acme.entities.companyRecords.CompanyRecord" >
+	  <property name="name" value=" Companyus, LLC"/>
+	  <property name="sector" value=" IT "/>
+	  <property name="ceo" value=" Lizseth Esquen Saavedra "/>
+	  <property name="description" value=" ERP, CRM, Business Intelligence "/>
+	  <property name="website" value=" http://companyus.es " />
+	  <property name="phone" value="+456(1299)75585595"/>
+	  <property name="email" value="cus@empresa.com"/>
+	  <property name="isInc" value="false"/> 
+	  <property name="starNumber" value="5"/>
 	   
-	  </bean>
-
+	 </bean>
+	
 </beans>
