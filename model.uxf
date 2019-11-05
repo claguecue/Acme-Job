@@ -373,6 +373,21 @@ CompanyRecord
 + isInc : Boolean {NotNull}
 + starNumber: Integer {NotNull}
     </panel_attributes>  
+
+
+
+      <x>210</x>
+      <y>343</y>
+      <w>175</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Investor Records
+--
++ investorName: String {NotBlank}
++ sector: String {NotBlank}
++ investingStatement: Money
++ starsNumber: Integer {Min:0, Max:5}
+  </panel_attributes>
   
   
 

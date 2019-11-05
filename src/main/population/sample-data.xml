@@ -161,4 +161,43 @@
 	</bean>
   
   
+  <!-- Investor -->
+  
+  <bean id="investor01" class="acme.entities.investors.Investor">
+	<property name="investorName" value="Elena Puerta" />
+	<property name="sector" value="Industrial" />
+	<property name="investingStatement">
+		<bean class=" acme.framework.datatypes.Money ">
+			<property value="1000" name="amount" />
+			<property value="€" name="currency" />
+		</bean>
+	</property>
+	<property name="starsNumber" value="2" />
+</bean>
+	
+	<bean id="investor02" class="acme.entities.investors.Investor">
+		<property name="investorName" value="Manuel Caballo"/>
+		<property name="sector" value = "Financiero"/>
+		<property name="investingStatement">
+		<bean class=" acme.framework.datatypes.Money ">
+			<property value="2000" name="amount" />
+			<property value="€" name="currency" />
+		</bean>
+	</property>
+		<property name="starsNumber"><null/></property>
+	</bean>
+	
+	<bean id="investor03" class="acme.entities.investors.Investor">
+		<property name="investorName" value="Gerardo Valiente"/>
+		<property name="sector" value = "Salud"/>
+		<property name="investingStatement">
+		<bean class=" acme.framework.datatypes.Money ">
+			<property value="3000" name="amount" />
+			<property value="€" name="currency" />
+		</bean>
+	</property>
+		<property name="starsNumber" value="5"/>
+	</bean>
+  
+  
 </beans>
