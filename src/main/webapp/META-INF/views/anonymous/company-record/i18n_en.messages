@@ -3,14 +3,11 @@
 # Copyright (c) 2019 Lizseth Esquen, based on Rafael Corchuelo DP files
 
 
-anonymous.company-record.list.label.fullName = Company
+anonymous.company-record.list.label.name = Company
 anonymous.company-record.list.label.sector = Sector
-anonymous.company-record.list.label.ceo = CEO 
-anonymous.company-record.list.label.description = Activities:
-anonymous.company-record.list.label.website = Website:
-anonymous.company-record.list.label.starNumber = Stars:
+anonymous.company-record.list.label.starNumber = Stars
 
-anonymous.company-record.form.label.fullName = Company name:
+anonymous.company-record.form.label.name = Company name:
 anonymous.company-record.form.label.sector = Sector:
 anonymous.company-record.form.label.ceo = Name of CEO :
 anonymous.company-record.form.label.description = Description about the activities:

@@ -32,7 +32,7 @@ master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.investor = Investor Record
 master.menu.anonymous.announcement = Announcement List
-master.menu.anonymous.company-record = List of companies
+master.menu.anonymous.company-record = Company List
 
 
 # master.menu.administrator ###################################################
@@ -53,7 +53,7 @@ master.menu.authenticated.request1.list = Requests List
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated = Authenticated
-master.menu.authenticated.company-record = List of companies
+master.menu.authenticated.company-record = Company List
 
 # master.menu.provider ########################################################
 
