@@ -32,10 +32,13 @@ master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.announcement = Announcement List
 
+master.menu.anonymous.company-record = List of companies
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
+
 master.menu.administrator.shutdown = Shut down
 master.menu.administrator.announcement = Announcement List
 
@@ -43,6 +46,11 @@ master.menu.administrator.announcement = Announcement List
 
 master.menu.authenticated = Authenticated
 master.menu.authenticated.announcement = Announcement List
+
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated = Authenticated
+master.menu.authenticated.company-record = List of companies
 
 # master.menu.provider ########################################################
 

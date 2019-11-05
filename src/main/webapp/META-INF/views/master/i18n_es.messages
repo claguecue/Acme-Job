@@ -30,6 +30,7 @@ master.menu.sign-out = Salir
 
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
+master.menu.anonymous.company-record = Lista de empresas
 master.menu.anonymous.announcement = Lista anuncios
 
 # master.menu.administrator ###################################################
@@ -43,6 +44,11 @@ master.menu.administrator.announcement = Lista anuncios
 
 master.menu.authenticated = Autentificado
 master.menu.authenticated.announcement = Lista anuncios
+
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated = Autentificado
+master.menu.authenticated.company-record = Lista de empresas
 
 # master.menu.provider ########################################################
 
