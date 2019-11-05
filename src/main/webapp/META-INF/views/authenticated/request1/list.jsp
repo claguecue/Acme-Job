@@ -20,8 +20,6 @@
 	<acme:list-column code="authenticated.request1.list.label.ticker" path="ticker" width="10%"/>
 	<acme:list-column code="authenticated.request1.list.label.creationMoment" path="creationMoment" width="10%"/>
 	<acme:list-column code="authenticated.request1.list.label.title" path="title" width="20%"/>
-	<acme:list-column code="authenticated.request1.list.label.deadline" path="deadline" width="10%"/>
-	<acme:list-column code="authenticated.request1.list.label.text" path="text" width="40%"/>
 </acme:list>
 
 
