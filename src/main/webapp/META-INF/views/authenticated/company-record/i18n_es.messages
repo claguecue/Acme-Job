@@ -4,10 +4,8 @@
 
 authenticated.company-record.form.label.name = Empresa
 authenticated.company-record.form.label.sector = Sector 
-authenticated.company-record.form.label.ceo = CEO
-authenticated.company-record.form.label.description = Actividades
-authenticated.company-record.form.label.website = Página Web
-authenticated.company-record.form.label.starNumber = Estrellas
+authenticated.company-record.form.label.starNumber = Stars:
+
 
 authenticated.company-record.button.return = Return
 
@@ -18,5 +16,5 @@ authenticated.company-record.list.label.description = Descripción de actividade
 authenticated.company-record.list.label.website = Página Web:
 authenticated.company-record.list.label.phone = Teléfono:
 authenticated.company-record.list.label.email = Correo electrónico:
-# authenticated.company-record.list.label.isInc = es incorporativo:
+authenticated.company-record.list.label.isInc = es incorporativo:
 authenticated.company-record.list.label.starNumber = Estrellas:
