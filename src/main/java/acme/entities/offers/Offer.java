@@ -7,8 +7,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
@@ -21,6 +21,12 @@ import lombok.Setter;
 @Getter
 @Setter
 
+// en el List solo mostrar ticker, titulo
+// mostrar las cosas en el orden en el que aparecen en el boletin
+// notnull para los campos no opcionales
+
+// title, creationMoment, deadline, description ,amount, ticker
+
 public class Offer extends DomainEntity {
 
 	private static final long	serialVersionUID	= 1L;
@@ -28,17 +34,20 @@ public class Offer extends DomainEntity {
 	@NotBlank
 	private String				title;
 
+	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
 	private Date				creationMoment;
 
+	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
-	@Future
+
 	private Date				limitDate;
 
 	@NotBlank
 	private String				descriptionText;
 
+	@NotNull
 	private Money				amount;
 
 	// OXXXX-99999
