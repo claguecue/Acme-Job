@@ -22,19 +22,26 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
      		<acme:menu-suboption code="master.menu.anonymous.investor" action="/anonymous/investor/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.offer" action="/authenticated/offer/list"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.company-record" action="/anonymous/company-record/list"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.announcement" action="/anonymous/announcement/list"/>
 
 		</acme:menu-option>
 		
+
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+     		<acme:menu-suboption code="master.menu.authenticated.challenge.list" action="/authenticated/challenge/list"/>
+     		<acme:menu-separator/>
+
 				<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
-      <acme:menu-suboption code="master.menu.authenticated.challenge.list" action="/authenticated/challenge/list"/>
-      <acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.authenticated.company-record" action="/authenticated/company-record/list"/>
+          <acme:menu-suboption code="master.menu.authenticated.challenge.list" action="/authenticated/challenge/list"/>
+          <acme:menu-suboption code="master.menu.authenticated.acme-request.list" action="/authenticated/acme-request/list"/>
+			    <acme:menu-suboption code="master.menu.authenticated.request1.list" action="/authenticated/request1/list"/>
+			    <acme:menu-suboption code="master.menu.authenticated.company-record" action="/authenticated/company-record/list"/>
+			    <acme:menu-suboption code="master.menu.authenticated.announcement" action="/authenticated/announcement/list"/>
 			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.authenticated.announcement" action="/authenticated/announcement/list"/>
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.authenticated.request1.list" action="/authenticated/request1/list"/>
+
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
