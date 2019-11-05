@@ -49,7 +49,7 @@
 
 <!-- AcmeRequest -->
 
-	<bean class="acme.entities.acmeRequests.AcmeRequest" id="request1">
+	<bean class="acme.entities.requests1.Request1" id="request1">
 		<property value="RABCD-1234" name="ticker"/>
 		<property value="2018/01/05 11:00" name="creationMoment"/>
 		<property value="2020/01/05 11:00" name="deadline"/>
@@ -63,7 +63,7 @@
 		</property>
 	</bean>
 	
-	<bean class="acme.entities.acmeRequests.AcmeRequest" id="request2">
+	<bean class="acme.entities.requests1.Request1" id="request2">
 		<property value="RABCD-1235" name="ticker"/>
 		<property value="2018/01/06 11:00" name="creationMoment"/>
 		<property value="2020/01/06 11:00" name="deadline"/>
@@ -78,7 +78,7 @@
 	</bean>
 	
 		
-	<bean class="acme.entities.acmeRequests.AcmeRequest" id="request3">
+	<bean class="acme.entities.requests1.Request1" id="request3">
 		<property value="RABCD-1236" name="ticker"/>
 		<property value="2018/03/06 11:00" name="creationMoment"/>
 		<property value="2020/03/06 11:00" name="deadline"/>
