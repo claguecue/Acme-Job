@@ -10,7 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.request1;
+package acme.features.authenticated.request_;
 
 import javax.annotation.PostConstruct;
 
@@ -18,21 +18,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.requests1.Request1;
+import acme.entities.requests_.Request_;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Authenticated;
 
 @Controller
-@RequestMapping("/authenticated/request1/")
-public class AuthenticatedRequest1Controller extends AbstractController<Authenticated, Request1> {
+@RequestMapping("/authenticated/request_/")
+public class AuthenticatedRequest_Controller extends AbstractController<Authenticated, Request_> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedRequest1ListService	listService;
+	private AuthenticatedRequest_ListService	listService;
 	@Autowired
-	private AuthenticatedRequest1ShowService	showService;
+	private AuthenticatedRequest_ShowService	showService;
 
 
 	// Constructors -----------------------------------------------------------

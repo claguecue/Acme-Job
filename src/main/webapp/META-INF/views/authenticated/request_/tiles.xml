@@ -18,12 +18,12 @@
 
 <tiles-definitions>
 
-	<definition name="authenticated/request1/list" extends="master">
-		<put-attribute name="body" type="template" value="../authenticated/request1/list.jsp" />
+	<definition name="authenticated/request_/list" extends="master">
+		<put-attribute name="body" type="template" value="../authenticated/request_/list.jsp" />
 	</definition>
 	
-	<definition name="authenticated/request1/form" extends="master">
-		<put-attribute name="body" type="template" value="../authenticated/request1/form.jsp" />
+	<definition name="authenticated/request_/form" extends="master">
+		<put-attribute name="body" type="template" value="../authenticated/request_/form.jsp" />
 	</definition>
 	
 </tiles-definitions>

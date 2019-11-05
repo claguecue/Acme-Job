@@ -29,30 +29,28 @@ master.menu.sign-out = Salir
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anónimo
-master.menu.anonymous.favourite-link = Enlace favorito
+master.menu.anonymous.favourite-link = Link favorito
+master.menu.anonymous.announcement = Lista de anuncios
 master.menu.anonymous.company-record = Lista de empresas
-master.menu.anonymous.announcement = Lista anuncios
-master.menu.anonymous.investor = Registro del Inversor
+master.menu.anonymous.investor = Lista de inversores
+
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
-master.menu.administrator.user-accounts = Cuentas de usuario
+master.menu.administrator.user-accounts = Cuentas de usuarios
+master.menu.administrator.announcement = Lista de anuncios
 master.menu.administrator.shutdown = Parar el sistema
-master.menu.administrator.announcement = Lista anuncios
 
 # master.menu.authenticated ###################################################
 
-master.menu.authenticated = Autentificado
-master.menu.authenticated.announcement = Lista anuncios
-master.menu.authenticated.challenge.list = Lista de Retos
-master.menu.authenticated.request1.list = Lista de Solicitudes
-
-
-# master.menu.authenticated ###################################################
-
-master.menu.authenticated = Autentificado
+master.menu.authenticated = Autenticado
+master.menu.authenticated.announcement = Lista de anuncios
+master.menu.authenticated.request_.list = Lista de solicitudes
+master.menu.authenticated.offer = Lista de ofertas
 master.menu.authenticated.company-record = Lista de empresas
+master.menu.authenticated.investor = Lista de inversores
+master.menu.authenticated.challenge.list = Lista de retos
 
 # master.menu.provider ########################################################
 
@@ -72,7 +70,6 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
-master.menu.user-account.investor = Registro del Inversor
 
 
 ﻿# master.footer ###############################################################

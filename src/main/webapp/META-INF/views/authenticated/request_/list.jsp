@@ -17,9 +17,9 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="authenticated.request1.list.label.ticker" path="ticker" width="30%"/>
-	<acme:list-column code="authenticated.request1.list.label.creationMoment" path="creationMoment" width="30%"/>
-	<acme:list-column code="authenticated.request1.list.label.title" path="title" width="40%"/>
+	<acme:list-column code="authenticated.request_.list.label.ticker" path="ticker" width="30%"/>
+	<acme:list-column code="authenticated.request_.list.label.creationMoment" path="creationMoment" width="30%"/>
+	<acme:list-column code="authenticated.request_.list.label.title" path="title" width="40%"/>
 </acme:list>
 
 

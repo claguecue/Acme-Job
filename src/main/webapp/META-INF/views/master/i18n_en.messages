@@ -30,30 +30,28 @@ master.menu.sign-out = Sign out
 
 master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
-master.menu.anonymous.investor = Investor Record
-master.menu.anonymous.announcement = Announcement List
-master.menu.anonymous.company-record = Company List
+master.menu.anonymous.announcement = Announcement list
+master.menu.anonymous.company-record = Company list
+master.menu.anonymous.investor = Investor list
 
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
-
+master.menu.administrator.announcement = Announcement list
 master.menu.administrator.shutdown = Shut down
-master.menu.administrator.announcement = Announcement List
 
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated = Authenticated
-master.menu.authenticated.announcement = Announcement List
-master.menu.authenticated.challenge.list = Challenges List
-master.menu.authenticated.request1.list = Requests List
+master.menu.authenticated.announcement = Announcement list
+master.menu.authenticated.request_.list = Request list
+master.menu.authenticated.offer = Offer list
+master.menu.authenticated.company-record = Company list
+master.menu.authenticated.investor = Investor list
+master.menu.authenticated.challenge.list = Challenge list
 
-# master.menu.authenticated ###################################################
-
-master.menu.authenticated = Authenticated
-master.menu.authenticated.company-record = Company List
 
 # master.menu.provider ########################################################
 
@@ -73,7 +71,6 @@ master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
-master.menu.user-account.investor = Investor Record
 
 # master.footer ###############################################################
 

@@ -1,5 +1,5 @@
 /*
- * AuthenticatedAcmeRequestShowService.java
+ * AuthenticatedAcmeRequestListService.java
  *
  * Copyright (c) 2019 Aureliano Piqueras, based on Rafael Corchuelo's DP Starter project.
  *
@@ -10,32 +10,34 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.request1;
+package acme.features.authenticated.request_;
+
+import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.requests1.Request1;
+import acme.entities.requests_.Request_;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
-import acme.framework.services.AbstractShowService;
+import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedRequest1ShowService implements AbstractShowService<Authenticated, Request1> {
+public class AuthenticatedRequest_ListService implements AbstractListService<Authenticated, Request_> {
 
 	@Autowired
-	private AuthenticatedRequest1Repository repository;
+	private AuthenticatedRequest_Repository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Request1> request) {
+	public boolean authorise(final Request<Request_> request) {
 		assert request != null;
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Request1> request, final Request1 entity, final Model model) {
+	public void unbind(final Request<Request_> request, final Request_ entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -44,11 +46,10 @@ public class AuthenticatedRequest1ShowService implements AbstractShowService<Aut
 	}
 
 	@Override
-	public Request1 findOne(final Request<Request1> request) {
-		Request1 result;
-		int id;
-		id = request.getModel().getInteger("id");
-		result = this.repository.findRequest1ById(id);
+	public Collection<Request_> findMany(final Request<Request_> request) {
+		assert request != null;
+		Collection<Request_> result;
+		result = this.repository.findMany();
 		return result;
 	}
 

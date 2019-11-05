@@ -1,5 +1,5 @@
 /*
- * AuthenticatedAcmeRequestListService.java
+ * AuthenticatedAcmeRequestShowService.java
  *
  * Copyright (c) 2019 Aureliano Piqueras, based on Rafael Corchuelo's DP Starter project.
  *
@@ -10,34 +10,32 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.request1;
-
-import java.util.Collection;
+package acme.features.authenticated.request_;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.requests1.Request1;
+import acme.entities.requests_.Request_;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
-import acme.framework.services.AbstractListService;
+import acme.framework.services.AbstractShowService;
 
 @Service
-public class AuthenticatedRequest1ListService implements AbstractListService<Authenticated, Request1> {
+public class AuthenticatedRequest_ShowService implements AbstractShowService<Authenticated, Request_> {
 
 	@Autowired
-	private AuthenticatedRequest1Repository repository;
+	private AuthenticatedRequest_Repository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Request1> request) {
+	public boolean authorise(final Request<Request_> request) {
 		assert request != null;
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Request1> request, final Request1 entity, final Model model) {
+	public void unbind(final Request<Request_> request, final Request_ entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -46,10 +44,11 @@ public class AuthenticatedRequest1ListService implements AbstractListService<Aut
 	}
 
 	@Override
-	public Collection<Request1> findMany(final Request<Request1> request) {
-		assert request != null;
-		Collection<Request1> result;
-		result = this.repository.findMany();
+	public Request_ findOne(final Request<Request_> request) {
+		Request_ result;
+		int id;
+		id = request.getModel().getInteger("id");
+		result = this.repository.findRequest_ById(id);
 		return result;
 	}
 

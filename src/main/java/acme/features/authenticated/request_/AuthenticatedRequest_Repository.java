@@ -10,23 +10,23 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.request1;
+package acme.features.authenticated.request_;
 
 import java.util.Collection;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.requests1.Request1;
+import acme.entities.requests_.Request_;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public interface AuthenticatedRequest1Repository extends AbstractRepository {
+public interface AuthenticatedRequest_Repository extends AbstractRepository {
 
-	@Query("select req from Request1 req where req.id = ?1")
-	Request1 findRequest1ById(int id);
+	@Query("select req from Request_ req where req.id = ?1")
+	Request_ findRequest_ById(int id);
 
-	@Query("select req from Request1 req")
-	Collection<Request1> findMany();
+	@Query("select req from Request_ req")
+	Collection<Request_> findMany();
 
 }
