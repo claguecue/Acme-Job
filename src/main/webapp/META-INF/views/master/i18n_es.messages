@@ -30,12 +30,27 @@ master.menu.sign-out = Salir
 
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
+master.menu.anonymous.company-record = Lista de empresas
+master.menu.anonymous.announcement = Lista anuncios
+master.menu.anonymous.investor = Registro del Inversor
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.announcement = Lista anuncios
+
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated = Autentificado
+master.menu.authenticated.announcement = Lista anuncios
+master.menu.authenticated.challenge.list = Lista de Retos
+
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated = Autentificado
+master.menu.authenticated.company-record = Lista de empresas
 
 # master.menu.provider ########################################################
 
@@ -47,11 +62,6 @@ master.menu.provider.favourite-link = Enlace favorito
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
 
-# master.menu.authenticated.challenge ##########################################################
-
-master.menu.authenticated.challenge = Retos
-master.menu.authenticated.challenge.list = Lista de Retos
-
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta
@@ -60,6 +70,13 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
+master.menu.user-account.investor = Registro del Inversor
+
+
+# master.menu.authenticated.acme-request ##########################################################
+
+master.menu.authenticated.acme-request = Solicitudes
+master.menu.authenticated.acme-request.list = Lista de Solicitudes
 
 ﻿# master.footer ###############################################################
 
@@ -96,4 +113,3 @@ master.license.text = \
 	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
-	
