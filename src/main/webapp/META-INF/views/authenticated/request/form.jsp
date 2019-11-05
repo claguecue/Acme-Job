@@ -1,6 +1,5 @@
-
 <%--
-- list.jsp
+- form.jsp
 -
 - Copyright (c) 2019 Aureliano Piqueras, based on Rafael Corchuelo's DP Starter project.
 -
@@ -11,15 +10,19 @@
 - they accept any liabilities with respect to them.
 --%>
 
+
 <%@page language="java"%>
 
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
-<acme:list>
-	<acme:list-column code="authenticated.request_.list.label.ticker" path="ticker" width="30%"/>
-	<acme:list-column code="authenticated.request_.list.label.creationMoment" path="creationMoment" width="30%"/>
-	<acme:list-column code="authenticated.request_.list.label.title" path="title" width="40%"/>
-</acme:list>
+<acme:form readonly="true">
+	<acme:form-textbox code="authenticated.request.form.label.ticker" path="ticker" />
+	<acme:form-moment code="authenticated.request.form.label.creationMoment" path="creationMoment"/>
+	<acme:form-textbox code="authenticated.request.form.label.title" path="title" />
+	<acme:form-moment code="authenticated.request.form.label.deadline" path="deadline" />
+	<acme:form-textarea code="authenticated.request.form.label.text" path="text" />
+	<acme:form-money code="authenticated.request.form.label.reward" path="reward" />
 
-
+  	<acme:form-return code="authenticated.request.form.button.return"/>
+</acme:form>

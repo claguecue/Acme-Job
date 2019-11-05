@@ -1,5 +1,5 @@
 /*
- * AuthenticatedAcmeRequestShowService.java
+ * AuthenticatedAcmeRequestListService.java
  *
  * Copyright (c) 2019 Aureliano Piqueras, based on Rafael Corchuelo's DP Starter project.
  *
@@ -12,30 +12,31 @@
 
 package acme.features.authenticated.request_;
 
+import java.util.Collection;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.requests_.Request_;
+import acme.entities.requests.Request;
 import acme.framework.components.Model;
-import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
-import acme.framework.services.AbstractShowService;
+import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedRequest_ShowService implements AbstractShowService<Authenticated, Request_> {
+public class AuthenticatedRequestListService implements AbstractListService<Authenticated, Request> {
 
 	@Autowired
-	private AuthenticatedRequest_Repository repository;
+	private AuthenticatedRequestRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Request_> request) {
+	public boolean authorise(final acme.framework.components.Request<Request> request) {
 		assert request != null;
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Request_> request, final Request_ entity, final Model model) {
+	public void unbind(final acme.framework.components.Request<Request> request, final Request entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -44,11 +45,10 @@ public class AuthenticatedRequest_ShowService implements AbstractShowService<Aut
 	}
 
 	@Override
-	public Request_ findOne(final Request<Request_> request) {
-		Request_ result;
-		int id;
-		id = request.getModel().getInteger("id");
-		result = this.repository.findRequest_ById(id);
+	public Collection<Request> findMany(final acme.framework.components.Request<Request> request) {
+		assert request != null;
+		Collection<Request> result;
+		result = this.repository.findMany();
 		return result;
 	}
 

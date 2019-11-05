@@ -1,5 +1,5 @@
 /*
- * AuthenticatedAcmeRequestRepository.java
+ * AuthenticatedCustomizationRepository.java
  *
  * Copyright (c) 2019 Aureliano Piqueras, based on Rafael Corchuelo's DP Starter project.
  *
@@ -10,23 +10,23 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.request_;
+package acme.features.administrator.customization;
 
 import java.util.Collection;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.requests_.Request_;
+import acme.entities.customizations.Customization;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public interface AuthenticatedRequest_Repository extends AbstractRepository {
+public interface AdministratorCustomizationRepository extends AbstractRepository {
 
-	@Query("select req from Request_ req where req.id = ?1")
-	Request_ findRequest_ById(int id);
+	@Query("select cus from Customization cus where cus.id = ?1")
+	Customization findCustomizationById(int id);
 
-	@Query("select req from Request_ req")
-	Collection<Request_> findMany();
+	@Query("select cus from Customization cus")
+	Collection<Customization> findMany();
 
 }

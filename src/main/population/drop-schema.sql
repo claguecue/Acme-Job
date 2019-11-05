@@ -33,13 +33,15 @@
 
     drop table if exists `consumer`;
 
+    drop table if exists `customization`;
+
     drop table if exists `investor`;
 
     drop table if exists `offer`;
 
     drop table if exists `provider`;
 
-    drop table if exists `request_`;
+    drop table if exists `request`;
 
     drop table if exists `user_account`;
 
