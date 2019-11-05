@@ -10,7 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.entities.acmeRequests;
+package acme.entities.requests1;
 
 import java.util.Date;
 
@@ -31,7 +31,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class AcmeRequest extends DomainEntity {
+public class Request1 extends DomainEntity {
 
 	// Serialization identifier -----------------------------------------------
 

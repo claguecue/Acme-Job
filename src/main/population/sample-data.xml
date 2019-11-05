@@ -49,7 +49,7 @@
 
 <!-- AcmeRequest -->
 
-	<bean class="acme.entities.acmeRequests.AcmeRequest" id="request1">
+	<bean class="acme.entities.requests1.Request1" id="request1">
 		<property value="RABCD-1234" name="ticker"/>
 		<property value="2018/01/05 11:00" name="creationMoment"/>
 		<property value="2020/01/05 11:00" name="deadline"/>
@@ -63,7 +63,7 @@
 		</property>
 	</bean>
 	
-	<bean class="acme.entities.acmeRequests.AcmeRequest" id="request2">
+	<bean class="acme.entities.requests1.Request1" id="request2">
 		<property value="RABCD-1235" name="ticker"/>
 		<property value="2018/01/06 11:00" name="creationMoment"/>
 		<property value="2020/01/06 11:00" name="deadline"/>
@@ -78,7 +78,7 @@
 	</bean>
 	
 		
-	<bean class="acme.entities.acmeRequests.AcmeRequest" id="request3">
+	<bean class="acme.entities.requests1.Request1" id="request3">
 		<property value="RABCD-1236" name="ticker"/>
 		<property value="2018/03/06 11:00" name="creationMoment"/>
 		<property value="2020/03/06 11:00" name="deadline"/>
@@ -116,6 +116,20 @@
 	  <property name="website" value=" http://companyus.es " />
 	  <property name="phone" value="+456(1299)75585595"/>
 	  <property name="email" value="cus@empresa.com"/>
+	  <property name="isInc" value="false"/> 
+	  <property name="starNumber" value="5"/>
+	   
+	 </bean>
+	 
+	  
+	 <bean id= "record 3" class="acme.entities.companyRecords.CompanyRecord" >
+	  <property name="name" value=" Aloha"/>
+	  <property name="sector" value=" IT "/>
+	  <property name="ceo" value=" Juan Roma Po "/>
+	  <property name="description" value=" ERP, CRM, Business Intelligence "/>
+	  <property name="website" value=" http://aloha.es " />
+	  <property name="phone" value="+492(1231)76582595"/>
+	  <property name="email" value="aloha@empresa.com"/>
 	  <property name="isInc" value="false"/> 
 	  <property name="starNumber" value="5"/>
 	   
@@ -166,36 +180,21 @@
   <bean id="investor01" class="acme.entities.investors.Investor">
 	<property name="investorName" value="Elena Puerta" />
 	<property name="sector" value="Industrial" />
-	<property name="investingStatement">
-		<bean class=" acme.framework.datatypes.Money ">
-			<property value="1000" name="amount" />
-			<property value="€" name="currency" />
-		</bean>
-	</property>
+	<property name="investingStatement" value="Se ha invertido en una máquina industrial"/>
 	<property name="starsNumber" value="2" />
 </bean>
 	
 	<bean id="investor02" class="acme.entities.investors.Investor">
 		<property name="investorName" value="Manuel Caballo"/>
 		<property name="sector" value = "Financiero"/>
-		<property name="investingStatement">
-		<bean class=" acme.framework.datatypes.Money ">
-			<property value="2000" name="amount" />
-			<property value="€" name="currency" />
-		</bean>
-	</property>
+		<property name="investingStatement" value="Se ha invertido en el sector financiero"/>
 		<property name="starsNumber"><null/></property>
 	</bean>
 	
 	<bean id="investor03" class="acme.entities.investors.Investor">
 		<property name="investorName" value="Gerardo Valiente"/>
 		<property name="sector" value = "Salud"/>
-		<property name="investingStatement">
-		<bean class=" acme.framework.datatypes.Money ">
-			<property value="3000" name="amount" />
-			<property value="€" name="currency" />
-		</bean>
-	</property>
+		<property name="investingStatement" value="Se ha invertido en un hospital de Sevilla"/>
 		<property name="starsNumber" value="5"/>
 	</bean>
   

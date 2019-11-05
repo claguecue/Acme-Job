@@ -17,8 +17,6 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="authenticated.investor.list.label.investorName" path="investorName" width="25%" />
-	<acme:list-column code="authenticated.investor.list.label.sector" path="sector" width="25%" />
-	<acme:list-column code="authenticated.investor.list.label.investingStatement" path="investingStatement" width="25%" />
-	<acme:list-column code="authenticated.investor.list.label.starsNumber" path="starsNumber" width="25%" />
+	<acme:list-column code="authenticated.investor.list.label.investorName" path="investorName" width="50%" />
+	<acme:list-column code="authenticated.investor.list.label.sector" path="sector" width="50%" />
 </acme:list>

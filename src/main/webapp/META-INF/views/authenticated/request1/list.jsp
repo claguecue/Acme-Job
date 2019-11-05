@@ -2,7 +2,7 @@
 <%--
 - list.jsp
 -
-- Copyright (c) 2019 Rafael Corchuelo.
+- Copyright (c) 2019 Aureliano Piqueras, based on Rafael Corchuelo's DP Starter project.
 -
 - In keeping with the traditional purpose of furthering education and research, it is
 - the policy of the copyright owner to permit non-commercial use and redistribution of
@@ -17,6 +17,9 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="anonymous.investor.list.label.investorName" path="investorName" width="50%" />
-	<acme:list-column code="anonymous.investor.list.label.sector" path="sector" width="50%" />
+	<acme:list-column code="authenticated.request1.list.label.ticker" path="ticker" width="30%"/>
+	<acme:list-column code="authenticated.request1.list.label.creationMoment" path="creationMoment" width="30%"/>
+	<acme:list-column code="authenticated.request1.list.label.title" path="title" width="40%"/>
 </acme:list>
+
+
