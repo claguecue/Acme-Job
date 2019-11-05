@@ -5,9 +5,8 @@
 
 authenticated.company-record.list.label.name = Company
 authenticated.company-record.list.label.sector = Sector
-authenticated.company-record.list.label.ceo = CEO 
-authenticated.company-record.list.label.description = Activities:
-authenticated.company-record.list.label.starNumber = Stars
+authenticated.company-record.list.label.starNumber = Stars: 
+
 
 authenticated.company-record.form.label.name = Company name:
 authenticated.company-record.form.label.sector = Sector:

@@ -120,6 +120,20 @@
 	  <property name="starNumber" value="5"/>
 	   
 	 </bean>
+	 
+	  
+	 <bean id= "record 3" class="acme.entities.companyRecords.CompanyRecord" >
+	  <property name="name" value=" Aloha"/>
+	  <property name="sector" value=" IT "/>
+	  <property name="ceo" value=" Juan Roma Po "/>
+	  <property name="description" value=" ERP, CRM, Business Intelligence "/>
+	  <property name="website" value=" http://aloha.es " />
+	  <property name="phone" value="+492(1231)76582595"/>
+	  <property name="email" value="aloha@empresa.com"/>
+	  <property name="isInc" value="false"/> 
+	  <property name="starNumber" value="5"/>
+	   
+	 </bean>
 	
 
 <!-- Offers -->
