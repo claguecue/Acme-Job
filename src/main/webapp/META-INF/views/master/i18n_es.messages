@@ -40,17 +40,18 @@ master.menu.anonymous.investor = Lista de inversores
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuarios
 master.menu.administrator.announcement = Lista de anuncios
+master.menu.administrator.customization = Mostrar personalización
 master.menu.administrator.shutdown = Parar el sistema
 
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated = Autenticado
 master.menu.authenticated.announcement = Lista de anuncios
-master.menu.authenticated.request_.list = Lista de solicitudes
+master.menu.authenticated.request = Lista de solicitudes
 master.menu.authenticated.offer = Lista de ofertas
 master.menu.authenticated.company-record = Lista de empresas
 master.menu.authenticated.investor = Lista de inversores
-master.menu.authenticated.challenge.list = Lista de retos
+master.menu.authenticated.challenge = Lista de retos
 
 # master.menu.provider ########################################################
 

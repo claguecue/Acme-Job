@@ -40,17 +40,18 @@ master.menu.anonymous.investor = Investor list
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.announcement = Announcement list
+master.menu.administrator.customization = Display Customization
 master.menu.administrator.shutdown = Shut down
 
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated = Authenticated
 master.menu.authenticated.announcement = Announcement list
-master.menu.authenticated.request_.list = Request list
+master.menu.authenticated.request = Request list
 master.menu.authenticated.offer = Offer list
 master.menu.authenticated.company-record = Company list
 master.menu.authenticated.investor = Investor list
-master.menu.authenticated.challenge.list = Challenge list
+master.menu.authenticated.challenge = Challenge list
 
 
 # master.menu.provider ########################################################
