@@ -47,7 +47,7 @@
 		<property name="text" value="This is the fourth description"/>
 	</bean>
 
-<!-- Request_ -->
+<!-- Request -->
 
 	<bean class="acme.entities.requests.Request" id="request1">
 		<property value="RABCD-1234" name="ticker"/>

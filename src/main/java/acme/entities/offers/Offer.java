@@ -20,13 +20,6 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-
-// en el List solo mostrar ticker, titulo
-// mostrar las cosas en el orden en el que aparecen en el boletin
-// notnull para los campos no opcionales
-
-// title, creationMoment, deadline, description ,amount, ticker
-
 public class Offer extends DomainEntity {
 
 	private static final long	serialVersionUID	= 1L;
@@ -41,7 +34,6 @@ public class Offer extends DomainEntity {
 
 	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
-
 	private Date				limitDate;
 
 	@NotBlank
@@ -50,7 +42,7 @@ public class Offer extends DomainEntity {
 	@NotNull
 	private Money				amount;
 
-	// OXXXX-99999
+	@NotBlank
 	@Column(unique = true)
 	@Pattern(regexp = "^+O[a-zA-Z]{4}+-[0-9]{5}")
 	private String				ticker;

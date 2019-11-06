@@ -42,10 +42,12 @@ public class Request extends DomainEntity {
 	@NotBlank
 	private String				title;
 
+	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
 	private Date				creationMoment;
 
+	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				deadline;
 
@@ -55,6 +57,7 @@ public class Request extends DomainEntity {
 	@NotNull
 	private Money				reward;
 
+	@NotNull
 	@Column(unique = true)
 	@Pattern(regexp = "^R[A-Z]{4}-[0-9]{4}$")
 	private String				ticker;
